@@ -1,0 +1,73 @@
+/* General styling for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2e2e2e; /* Updated to match the phone's background color */
+    color: #e0e0e0;
+}
+
+/* Container for left and right sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left section (header, text, and code snippet) */
+.left-section {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 20px;
+}
+
+/* Header styling */
+.header {
+    font-size: 48px;
+    font-weight: semi-bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.header span {
+    text-decoration: underline;
+}
+
+/* Subtext descriptions */
+.subtext {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Code snippet styling */
+.code-snippet {
+    background-color: #8887878f;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #c5c5c5;
+    white-space: pre-line;
+    max-width: 500px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Right section (phone mockup) */
+.right-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex: 0 1 300px;
+}
+
+/* Phone image styling */
+.phone {
+    max-width: 400px;
+    height: auto;
+}
