@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,65 @@
     <title>Krystof Penka - Low-Code Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <!-- Left Section: Header, Text, Code -->
-    <div class="left-section">
-        <div class="header">
-            Hi, my name is Krystof and I am <span>low-code developer.</span>
+    <div class="container">
+        <!-- Left Section: Header, Text, Code -->
+        <div class="left-section">
+            <div class="header">
+                Hi, my name is Krystof and I am <span>low-code developer.</span>
+            </div>
+
+            <div class="subtext">
+                <p>I help companies with digitalization.</p>
+                <p>I set up and automate processes.</p>
+                <p>I create mobile and web applications.</p>
+                <p>I work with Power Platform components such as Power Apps, Power Automate and many more...</p>
+            </div>
+
+            <div class="code-snippet">
+                <!--code snippet section-->
+                <pre>
+                // Hello world!
+                Concurrent(
+                    UpdateContext(
+                        {
+                            krystof_penka: {
+                                mail: "krystof.penka@outlook.com",
+                                phone: "+420 722 773 667"
+                            }
+                        }
+                    ),
+                    UpdateContext(
+                        {
+                            your_team: {
+                                hiring: true,
+                                need_developer: true
+                            }
+                        }
+                    )
+                );
+                
+                If(
+                    your_team.hiring = true || your_team.need_developer = true,
+                    UpdateContext({your_team: {hiring: false}}) & 
+                    Office365Outlook.SendEmail(
+                        "krystof.penka@outlook.com", //Recipient
+                        "Power Platform Developer",  //Subject
+                        "Hi Krystof!"                //Message
+                    )
+                )
+                </pre>
+            </div>
         </div>
 
-        <div class="subtext">
-            <p>I help companies with digitalization.</p>
-            <p>I set up and automate processes.</p>
-            <p>I create mobile and web applications.</p>
-            <p>I work with Power Platform components such as Power Apps, Power Automate and many more...</p>
-        </div>
-
-        <div class="code-snippet">
-            <!--code snippet section-->
+        <!-- Right Section: Phone Mockup -->
+        <div class="right-section">
+            <img src="phone_mockup.png" alt="Phone Mockup" class="phone">
         </div>
     </div>
-
-    <!-- Right Section: Phone Mockup -->
-    <div class="right-section">
-        <img src="phone_mockup.png" alt="Phone Mockup" class="phone">
-    </div>
-</div>
 
 </body>
+
 </html>
