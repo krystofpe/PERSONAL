@@ -55,7 +55,7 @@ body {
     width: var(--code-snippet-width);
     max-width: 100%;
     overflow: hidden;
-    padding: 16px;
+    padding: 0px;
     background-color: #2d2d2d;
     /* Updated background color */
     border-radius: 5px;
