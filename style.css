@@ -20,8 +20,8 @@ body {
 
 /* Left section (header, text, and code snippet) */
 .left-section {
-    flex: 2;
-    max-width: 600px;
+    flex: 2; /* Two-thirds of the container */
+    max-width: 66.66%; /* Ensure it doesn't exceed two-thirds */
     padding-right: 20px;
 }
 
@@ -47,25 +47,29 @@ body {
 
 /* Code snippet styling */
 .code-snippet {
-    background-color: #8887878f;
-    padding: 15px;
-    border-radius: 8px;
+    --code-snippet-width: 100%; /* Default width */
+    width: var(--code-snippet-width);
+    max-width: 100%;
+    overflow: hidden;
+    padding: 16px;
+    background-color: #2d2d2d;
+    border-radius: 5px;
+    box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     color: #c5c5c5;
     white-space: pre-line;
-    max-width: 500px;
     margin: 0;
     text-align: left;
 }
 
 /* Right section (phone mockup) */
 .right-section {
+    flex: 1; /* One-third of the container */
+    max-width: 33.33%; /* Ensure it doesn't exceed one-third */
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    flex: 1
-        /*0 1 300px*/
 }
 
 /* Phone image styling */
@@ -74,38 +78,15 @@ body {
     height: auto;
 }
 
-/* Ensure the code snippet container is wider */
-.code-snippet {
-    width: 100%;
-    /* Make it take the full width of the container */
-    max-width: 100%;
-    /* Prevent it from exceeding the container size */
-    overflow: hidden;
-    /* Remove scrolling behavior */
-    padding: 16px;
-    /* Add some padding for better readability */
-    background-color: #2d2d2d;
-    /* Match background color to Prism theme */
-    border-radius: 5px;
-    /* Rounded corners for aesthetics */
-    box-sizing: border-box;
-    /* Make sure padding is included in width calculations */
-}
-
 /* Wrap code inside the pre element */
 pre {
     white-space: pre-wrap;
-    /* Allow wrapping of code */
     word-wrap: break-word;
-    /* Break long words if necessary */
 }
 
 /* Optional: Customize the code text appearance */
 pre code {
     font-family: Consolas, Monaco, 'Courier New', monospace;
-    /* Monospaced font */
     font-size: 14px;
-    /* Adjust font size if necessary */
     color: #ffffff;
-    /* Ensure code text is readable */
 }
