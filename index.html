@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Krystof Penka - Low-Code Developer</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Prism.js for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </head>
 
 <body>
@@ -26,38 +29,38 @@
             </div>
 
             <div class="code-snippet">
-                <!--code snippet section-->
-                <pre>
-                // Hello world!
-                Concurrent(
-                    UpdateContext(
-                        {
-                            krystof_penka: {
-                                mail: "krystof.penka@outlook.com",
-                                phone: "+420 722 773 667"
-                            }
-                        }
-                    ),
-                    UpdateContext(
-                        {
-                            your_team: {
-                                hiring: true,
-                                need_developer: true
-                            }
-                        }
-                    )
-                );
-                
-                If(
-                    your_team.hiring = true || your_team.need_developer = true,
-                    UpdateContext({your_team: {hiring: false}}) & 
-                    Office365Outlook.SendEmail(
-                        "krystof.penka@outlook.com", //Recipient
-                        "Power Platform Developer",  //Subject
-                        "Hi Krystof!"                //Message
-                    )
-                )
-                </pre>
+                <!-- Code snippet section with syntax highlighting -->
+                <pre><code class="language-javascript">
+// Hello world!
+Concurrent(
+    UpdateContext(
+        {
+            krystof_penka: {
+                mail: "krystof.penka@outlook.com",
+                phone: "+420 722 773 667"
+            }
+        }
+    ),
+    UpdateContext(
+        {
+            your_team: {
+                hiring: true,
+                need_developer: true
+            }
+        }
+    )
+);
+
+If(
+    your_team.hiring = true || your_team.need_developer = true,
+    UpdateContext({your_team: {hiring: false}}) & 
+    Office365Outlook.SendEmail(
+        "krystof.penka@outlook.com", //Recipient
+        "Power Platform Developer",  //Subject
+        "Hi Krystof!"                //Message
+    )
+)
+                </code></pre>
             </div>
         </div>
 
