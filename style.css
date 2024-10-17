@@ -71,3 +71,28 @@ body {
     max-width: 400px;
     height: auto;
 }
+
+/* Ensure the code snippet container is wider */
+.code-snippet {
+    width: 100%; /* Make it take the full width of the container */
+    max-width: 100%; /* Prevent it from exceeding the container size */
+    overflow: hidden; /* Remove scrolling behavior */
+    padding: 16px; /* Add some padding for better readability */
+    background-color: #2d2d2d; /* Match background color to Prism theme */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    box-sizing: border-box; /* Make sure padding is included in width calculations */
+}
+
+/* Wrap code inside the pre element */
+pre {
+    white-space: pre-wrap; /* Allow wrapping of code */
+    word-wrap: break-word; /* Break long words if necessary */
+}
+
+/* Optional: Customize the code text appearance */
+pre code {
+    font-family: Consolas, Monaco, 'Courier New', monospace; /* Monospaced font */
+    font-size: 14px; /* Adjust font size if necessary */
+    color: #ffffff; /* Ensure code text is readable */
+}
+
