@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #989595;
+    background-color: #777777;
     /* Updated to match the phone's background color */
     color: #e0e0e0;
 }
@@ -55,12 +55,13 @@ body {
     width: var(--code-snippet-width);
     max-width: 100%;
     overflow: hidden;
-    padding: 5px;
-    background-color: #814f7b;
+    padding: 16px;
+    background-color: #777777;
+    /* Updated background color */
     border-radius: 5px;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
+    font-size: 14px;
     color: #ffffff;
     white-space: pre-line;
     margin: 0;
@@ -80,7 +81,7 @@ body {
 
 /* Phone image styling */
 .phone {
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
 }
 
@@ -93,6 +94,6 @@ pre {
 /* Optional: Customize the code text appearance */
 pre code {
     font-family: Consolas, Monaco, 'Courier New', monospace;
-    font-size: 12px;
+    font-size: 14px;
     color: #ffffff;
 }
