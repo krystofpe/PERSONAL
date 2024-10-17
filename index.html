@@ -30,15 +30,35 @@
 
             <div class="code-snippet">
                 <!-- Code snippet section with C# syntax highlighting -->
-                <pre><code class="language-csharp">
+                <pre><code class="language-javascript">
                 <!-- Code snippet value -->  
-public class Program
-    {
-        public static void Main(string[] args)
-            {
-                System.Console.WriteLine("Hello, World!");
+// Hello world!
+Concurrent(
+    UpdateContext(
+        {
+            krystof_penka: {
+                mail: "krystof.penka@outlook.com",
+                phone: "+420 722 773 667"
             }
-        }  
+        }
+    ),
+    UpdateContext(
+        {
+            your_team: {
+                hiring: true,
+                need_developer: true
+            }
+        }
+    )
+);
+If(
+    your_team.hiring = true || your_team.need_developer = true,
+    UpdateContext({your_team: {hiring: false}}) And Office365Outlook.SendEmail(
+        "krystof.penka@outlook.com", // Recipient
+        "Power Platform Developer", // Subject
+        "Hi Krystof!" // Message
+    )
+)  
                 </code></pre>
             </div>
         </div>
