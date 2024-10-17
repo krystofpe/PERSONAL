@@ -29,37 +29,37 @@
             </div>
 
             <div class="code-snippet">
-                <!-- Code snippet section with syntax highlighting -->
-                <pre><code class="language-javascript">
+                <!-- Code snippet section with C# syntax highlighting -->
+                <pre><code class="language-csharp">
 // Hello world!
 Concurrent(
     UpdateContext(
-        {
-            krystof_penka: {
-                mail: "krystof.penka@outlook.com",
-                phone: "+420 722 773 667"
+        new {
+            krystof_penka = new {
+                mail = "krystof.penka@outlook.com",
+                phone = "+420 722 773 667"
             }
         }
     ),
     UpdateContext(
-        {
-            your_team: {
-                hiring: true,
-                need_developer: true
+        new {
+            your_team = new {
+                hiring = true,
+                need_developer = true
             }
         }
     )
 );
 
-If(
-    your_team.hiring = true || your_team.need_developer = true,
-    UpdateContext({your_team: {hiring: false}}) & 
+if (your_team.hiring == true || your_team.need_developer == true)
+{
+    UpdateContext(new { your_team = new { hiring = false } });
     Office365Outlook.SendEmail(
         "krystof.penka@outlook.com", //Recipient
         "Power Platform Developer",  //Subject
         "Hi Krystof!"                //Message
-    )
-)
+    );
+}
                 </code></pre>
             </div>
         </div>
