@@ -31,35 +31,7 @@
             <div class="code-snippet">
                 <!-- Code snippet section with C# syntax highlighting -->
                 <pre><code class="language-csharp">
-// Hello world!
-Concurrent(
-    UpdateContext(
-        new {
-            krystof_penka = new {
-                mail = "krystof.penka@outlook.com",
-                phone = "+420 722 773 667"
-            }
-        }
-    ),
-    UpdateContext(
-        new {
-            your_team = new {
-                hiring = true,
-                need_developer = true
-            }
-        }
-    )
-);
-
-if (your_team.hiring == true || your_team.need_developer == true)
-{
-    UpdateContext(new { your_team = new { hiring = false } });
-    Office365Outlook.SendEmail(
-        "krystof.penka@outlook.com", //Recipient
-        "Power Platform Developer",  //Subject
-        "Hi Krystof!"                //Message
-    );
-}
+                <!-- Snippet component text -->
                 </code></pre>
             </div>
         </div>
