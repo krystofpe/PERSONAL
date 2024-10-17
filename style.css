@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #2e2e2e;
+    background-color: #757474;
     /* Updated to match the phone's background color */
     color: #e0e0e0;
 }
@@ -51,8 +51,8 @@ body {
     width: var(--code-snippet-width);
     max-width: 100%;
     overflow: hidden;
-    padding: 16px;
-    background-color: #2d2d2d;
+    padding: 5px;
+    background-color: #757474;
     border-radius: 5px;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
