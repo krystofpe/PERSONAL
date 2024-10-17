@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #2e2e2e; /* Updated to match the phone's background color */
+    background-color: #2e2e2e;
+    /* Updated to match the phone's background color */
     color: #e0e0e0;
 }
 
@@ -19,7 +20,7 @@ body {
 
 /* Left section (header, text, and code snippet) */
 .left-section {
-    flex: 1;
+    flex: 2;
     max-width: 600px;
     padding-right: 20px;
 }
@@ -63,7 +64,8 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    flex: 0 1 300px;
+    flex: 1
+        /*0 1 300px*/
 }
 
 /* Phone image styling */
@@ -74,25 +76,36 @@ body {
 
 /* Ensure the code snippet container is wider */
 .code-snippet {
-    width: 100%; /* Make it take the full width of the container */
-    max-width: 100%; /* Prevent it from exceeding the container size */
-    overflow: hidden; /* Remove scrolling behavior */
-    padding: 1Opx; /* Add some padding for better readability */
-    background-color: #2d2d2d; /* Match background color to Prism theme */
-    border-radius: 5px; /* Rounded corners for aesthetics */
-    box-sizing: border-box; /* Make sure padding is included in width calculations */
+    width: 100%;
+    /* Make it take the full width of the container */
+    max-width: 100%;
+    /* Prevent it from exceeding the container size */
+    overflow: hidden;
+    /* Remove scrolling behavior */
+    padding: 16px;
+    /* Add some padding for better readability */
+    background-color: #2d2d2d;
+    /* Match background color to Prism theme */
+    border-radius: 5px;
+    /* Rounded corners for aesthetics */
+    box-sizing: border-box;
+    /* Make sure padding is included in width calculations */
 }
 
 /* Wrap code inside the pre element */
 pre {
-    white-space: pre-wrap; /* Allow wrapping of code */
-    word-wrap: break-word; /* Break long words if necessary */
+    white-space: pre-wrap;
+    /* Allow wrapping of code */
+    word-wrap: break-word;
+    /* Break long words if necessary */
 }
 
 /* Optional: Customize the code text appearance */
 pre code {
-    font-family: Consolas, Monaco, 'Courier New', monospace; /* Monospaced font */
-    font-size: 12px; /* Adjust font size if necessary */
-    color: #ffffff; /* Ensure code text is readable */
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    /* Monospaced font */
+    font-size: 14px;
+    /* Adjust font size if necessary */
+    color: #ffffff;
+    /* Ensure code text is readable */
 }
-
