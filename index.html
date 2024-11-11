@@ -39,27 +39,28 @@
 Concurrent(
     UpdateContext(
         {
-            krystof_penka: {
-                mail: "krystof.penka@outlook.com",
-                phone: "+420 722 773 667"
+            you: {
+                mail: <your_mail>,
+                open_for_work: true,
+                power_platform_developer: true 
             }
         }
     ),
     UpdateContext(
         {
-            your_team: {
+            our_team: {
                 hiring: true,
-                need_developer: true
+                mail: <our_email>
             }
         }
     )
 );
 If(
-    your_team.hiring = true || your_team.need_developer = true,
-    UpdateContext({your_team: {hiring: false}}) And Office365Outlook.SendEmail(
-        "krystof.penka@outlook.com", // Recipient
+    our_team.hiring = true && you.open_for_work = true && you.power_platform_developer = true,
+    UpdateContext({you: {open_for_work: false}}) && Office365Outlook.SendEmail(
+        our_team.mail, // Recipient
         "Power Platform Developer", // Subject
-        "Hi Krystof!" // Message
+        "Hi!" // Message
     )
 )  
                 </code></pre>
