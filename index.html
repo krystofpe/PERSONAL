@@ -56,7 +56,7 @@ Concurrent(
 );
 If(
     your_team.hiring = true || your_team.need_developer = true,
-    UpdateContext({your_team: {hiring: false}}) And Office365Outlook.SendEmail(
+    UpdateContext({your_team: {hiring: false}}) && Office365Outlook.SendEmail(
         "krystof.penka@outlook.com", // Recipient
         "Power Platform Developer", // Subject
         "Hi Krystof!" // Message
